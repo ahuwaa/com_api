@@ -5,7 +5,9 @@ defined( '_JEXEC' ) or die( ';)' );
 
 jimport('joomla.installer.installer');
 jimport('joomla.filesystem.file');
-
+if(!defined('DS')){
+   define('DS',DIRECTORY_SEPARATOR);
+}
 $db = & JFactory::getDBO();
 $install_status = new JObject();
 $install_source = $this->parent->getPath('source');
