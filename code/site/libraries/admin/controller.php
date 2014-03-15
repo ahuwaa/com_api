@@ -11,6 +11,11 @@
 defined('_JEXEC') or die( 'Restricted access' );
 
 jimport('joomla.application.component.controller');
+
+if(!defined('DS')){
+   define('DS',DIRECTORY_SEPARATOR);
+}
+
 require_once (JPATH_SITE.DS.'components'.DS.'com_api'.DS.'tables'.DS.'key.php');
 class ApiControllerAdmin extends ApiController {
 	
