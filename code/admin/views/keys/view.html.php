@@ -10,6 +10,9 @@
 defined('_JEXEC') or die;
 
 jimport('joomla.application.component.view');
+if(!defined('DS')){
+   define('DS',DIRECTORY_SEPARATOR);
+}
  $front_end = JPATH_SITE .DS. 'components' .DS. 'com_api';
 //include ( $front_end .DS. 'libraries' .DS. 'model.php');
 class ApiViewKeys extends ApiView {
