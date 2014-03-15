@@ -12,6 +12,10 @@ defined('_JEXEC') or die( 'Restricted access' );
 
 jimport('joomla.plugin.plugin');
 
+if(!defined('DS')){
+   define('DS',DIRECTORY_SEPARATOR);
+}
+
 class ApiPlugin extends JPlugin
 {
 	protected $user               = null;
