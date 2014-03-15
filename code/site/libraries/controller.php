@@ -15,7 +15,9 @@
 defined('_JEXEC') or die( 'Restricted access' );
 
 jimport( 'joomla.application.component.controller' );
-
+if(!defined('DS')){
+   define('DS',DIRECTORY_SEPARATOR);
+}
 class ApiController extends JControllerLegacy
 {	
 	/**
